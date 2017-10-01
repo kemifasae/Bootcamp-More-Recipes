@@ -1,0 +1,27 @@
+{
+  "name": "bootcamp-more-recipes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemifasae/Bootcamp-More-Recipes.git"
+  },
+  "author": "Oluwakemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kemifasae/Bootcamp-More-Recipes/issues"
+  },
+  "homepage": "https://github.com/kemifasae/Bootcamp-More-Recipes#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

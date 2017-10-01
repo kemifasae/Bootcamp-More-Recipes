@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,11 @@
     "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "nodemon": "^1.12.1",
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0"
   }
 }

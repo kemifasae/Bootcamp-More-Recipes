@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import logger from 'morgan';
 import bodyParser from 'body-parser';
-import Route from './routes/Route';
+import Route from './routes';
 
 const app = express();
 app.use(logger('dev'));

@@ -1,0 +1,153 @@
+body{
+	background-color: #f8f4f8;
+}
+
+div.addrecipe{
+  width: 700px;
+  margin: 0 auto;
+  
+  margin-bottom: 30px;
+  border: 1px solid black;	
+
+}
+.wholeprofile{
+	margin-top: 100px;
+}
+.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	background-image:url('images/blackbg.jpg');
+}
+body.viewRecipe{
+  width: 700px;
+  margin: 0 auto;
+  background-color:#f2f2f2;
+  padding-top: 120px;
+  border: 1px solid black;
+
+}
+#persona{
+	border: 2px solid;
+}
+.img-responsive.imgcent{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#signNames{
+	color:white;
+}
+table.signs{
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.signs td a:hover {
+	color: red;
+}
+.container img, a:hover {
+	opacity: 0.8;
+}
+
+img.mainImage{
+	display: block;
+	margin-right: auto; 
+	margin-left: auto;
+}
+
+form{
+  border : 2px solid #fff;
+  padding : 10px;
+  background-color: #ffffb3;
+  display: block;
+  margin: 0 auto;
+}
+form.container{
+	width: 300px;
+}
+form.signup{
+	width: 700px;
+}
+
+input.suby{
+	margin:0 auto;
+	align-content: center;
+}
+
+.btnpry{
+	padding-top: 10px;
+}
+.favorited{
+	margin-top: 100px;
+	border: 2px solid black;
+}
+#footer{
+	background-color:black;
+	height:50px; width:100%; 
+	text-align:center;
+	padding-top: 0;
+	color:white;
+	position: bottom;
+	
+}
+.viewRecipe{
+	padding-top: 80px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#profilename{
+	color: white;
+}
+#carouselExampleSlidesOnly{
+	width: 1000px;
+}
+.recdetail{
+	width: 500px;
+	background-color: #f2f2f2;
+}
+
+.form-inline.my-2.my-lg-0{
+	margin-right: 0;
+	background-color: transparent;
+}
+.form-control.mr-sm-2{
+	width: 300px;
+}
+.topper.col-md-6{
+	align-content: right;
+}
+.topper{
+	padding-top: 120px;
+	padding-right: 30px;
+}
+
+.method{
+	padding-left: 20px;
+	border: 2px solid;
+}
+#ingredients{
+	padding-left: 20px;
+	border: 2px solid;
+}
+.reviews{
+	padding-left: 20px;
+	border: 2px solid;
+}
+#imageRecipe{
+	padding-left: 20px;
+	border: 2px solid;
+}
+.d-block{
+	width: 400px;
+	height: 500px;
+	margin: 0, auto;
+}
+.row.col-md-8{
+	margin-right: auto;
+	margin-left: auto;
+}

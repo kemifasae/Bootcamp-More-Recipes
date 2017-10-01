@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0", shrink-to-fit="no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+    <title>My Profile</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <!-- Navbar content -->
+		  <a class="navbar-brand" href="index.html">Home</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">My Favourites <span class="sr-only">(current)</span></a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search for Recipe</button>
+		    </form>
+		  </div>
+	</nav>
+
+	<div class="wholeprofile">
+	<div class="row">
+	    <div class="col-4">
+	    <!-- List group -->
+			<div class="list-group" id="myList" role="tablist">
+			  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#personaldetails" role="tab">Personal Details</a>
+			  <a class="list-group-item list-group-item-action" data-toggle="list" href="#myrecipes" role="tab">My Recipes</a>
+			  <a class="list-group-item list-group-item-action" data-toggle="list" href="#myfavorites" role="tab">My Favorites</a>
+			  <a class="list-group-item list-group-item-action" data-toggle="list" href="#addnew" role="tab">Add new Recipe</a>
+			</div>
+		</div>
+
+			<!-- Tab panes -->
+
+  		<div class="col-8">
+			<div class="tab-content">
+			  <div class="tab-pane active" id="personaldetails" role="tabpanel">
+			  	<p id="persona">Personal details goes here<br>
+			  		NAME: AJANGBALA J.K<br>
+			  		Email: wateva<br>
+			  		Username: I don't know
+			    </p></div>
+			  <div class="tab-pane" id="myrecipes" role="tabpanel">
+			  	<div class="container">
+
+			        <div class="row">
+			            <div class="col-md-6">
+			               <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <div><h5 class="mb-1">Recipe Name<br></h5><small id="author">By Author</small></div>
+			                      <small id="dateposted">Date posted</small>
+			                    </div>
+			                    <p class="mb-1"><img class = "img-responsive" src="images/thirdimage.jpg"></p>
+			                    <small>Summary of recipe</small> 
+			                    <div>
+			                        <small id = reviewno> 8 reviews<button class="btn btn-primary" type="submit">Modify</button>
+			</small> <small id="dvno"><button class="btn btn-primary" type="submit">Delete</button>3 downvotes</small> <small id="upvno"> 4 upotes</small>
+			                    </div>
+			                  </a>
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <h5 class="mb-1">List group item heading</h5>
+			                      <small>3 days ago</small>
+			                    </div>
+			                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			                    <small>Donec id elit non mi porta.</small>
+			                  </a>  
+			                </div> 
+			            </div>
+			          
+			        </div>
+
+			         <div class="row">
+			            <div class="col-md-6">
+			               <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <div><h5 class="mb-1">Recipe Name<br></h5><small id="author">By Author</small></div>
+			                      <small id="dateposted">Date posted</small>
+			                    </div>
+			                    <p class="mb-1"><img class = "img-responsive" src="images/thirdimage.jpg"></p>
+			                    <small>Summary of recipe</small> 
+			                    <div>
+			                        <small id = reviewno> 8 reviews</small> <small id="dvno">3 downvotes</small> <small id="upvno"> 4 upotes</small>
+			                    </div>
+			                  </a>
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <h5 class="mb-1">List group item heading</h5>
+			                      <small>3 days ago</small>
+			                    </div>
+			                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			                    <small>Donec id elit non mi porta.</small>
+			                  </a>  
+			                </div> 
+			            </div>
+			          
+			        </div>
+
+			         <div class="row">
+			            <div class="col-md-6">
+			               <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <div><h5 class="mb-1">Recipe Name<br></h5><small id="author">By Author</small></div>
+			                      <small id="dateposted">Date posted</small>
+			                    </div>
+			                    <p class="mb-1"><img class = "img-responsive" src="images/thirdimage.jpg"></p>
+			                    <small>Summary of recipe</small> 
+			                    <div>
+			                        <small id = reviewno> 8 reviews</small> <small id="dvno">3 downvotes</small> <small id="upvno"> 4 upotes</small>
+			                    </div>
+			                  </a>
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <h5 class="mb-1">List group item heading</h5>
+			                      <small>3 days ago</small>
+			                    </div>
+			                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			                    <small>Donec id elit non mi porta.</small>
+			                  </a>  
+			                </div> 
+			            </div>
+			          
+			        </div>
+    		</div>
+		</div>
+			  <div class="tab-pane" id="myfavorites" role="tabpanel">
+			  	<div class="container">
+
+			        <div class="row">
+			            <div class="col-md-6">
+			               <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <div><h5 class="mb-1">Recipe Name<br></h5><small id="author">By Author</small></div>
+			                      <small id="dateposted">Date posted</small>
+			                    </div>
+			                    <p class="mb-1"><img class = "img-responsive" src="images/thirdimage.jpg"></p>
+			                    <small>Summary of recipe</small> 
+			                    <div>
+			                        <small id = reviewno> 8 reviews</small> <small id="dvno">3 downvotes</small> <small id="upvno"> 4 upotes</small>
+			                    </div>
+			                  </a>
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <h5 class="mb-1">List group item heading</h5>
+			                      <small>3 days ago</small>
+			                    </div>
+			                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			                    <small>Donec id elit non mi porta.</small>
+			                  </a>  
+			                </div> 
+			            </div>
+			          
+			        </div>
+
+			         <div class="row">
+			            <div class="col-md-6">
+			               <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <div><h5 class="mb-1">Recipe Name<br></h5><small id="author">By Author</small></div>
+			                      <small id="dateposted">Date posted</small>
+			                    </div>
+			                    <p class="mb-1"><img class = "img-responsive" src="images/thirdimage.jpg"></p>
+			                    <small>Summary of recipe</small> 
+			                    <div>
+			                        <small id = reviewno> 8 reviews</small> <small id="dvno">3 downvotes</small> <small id="upvno"> 4 upotes</small>
+			                    </div>
+			                  </a>
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <h5 class="mb-1">List group item heading</h5>
+			                      <small>3 days ago</small>
+			                    </div>
+			                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			                    <small>Donec id elit non mi porta.</small>
+			                  </a>  
+			                </div> 
+			            </div>
+			          
+			        </div>
+
+			         <div class="row">
+			            <div class="col-md-6">
+			               <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <div><h5 class="mb-1">Recipe Name<br></h5><small id="author">By Author</small></div>
+			                      <small id="dateposted">Date posted</small>
+			                    </div>
+			                    <p class="mb-1"><img class = "img-responsive" src="images/thirdimage.jpg"></p>
+			                    <small>Summary of recipe</small> 
+			                    <div>
+			                        <small id = reviewno> 8 reviews</small> <small id="dvno">3 downvotes</small> <small id="upvno"> 4 upotes</small>
+			                    </div>
+			                  </a>
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="list-group">
+			                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+			                    <div class="d-flex w-100 justify-content-between">
+			                      <h5 class="mb-1">List group item heading</h5>
+			                      <small>3 days ago</small>
+			                    </div>
+			                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			                    <small>Donec id elit non mi porta.</small>
+			                  </a>  
+			                </div> 
+			            </div>
+			          
+			        </div>
+    		</div>
+			  </div>
+			<div class="tab-pane" id="addnew" role="tabpanel"><div class="addrecipe">
+				<h1 id="titlenew">ADD NEW RECIPE</h1>
+
+				<form class="addnew">
+			    
+				  <div class="form-group">
+				    <label for="recipename">Name of Recipe</label>
+				    <input type="text" name="mainname" class="form-control" id="recipename">
+				  </div>
+				  <div class="form-group">
+				    <small><label for="summaryname">Summary of Recipe</label>
+				    <input type="text" name="summaryname" class="form-control" id="summaryname">
+				  	</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="method">Method</label>
+				    <textarea class="form-control" id="method" rows="3"></textarea>
+				  </div>
+
+					<div class="container">
+		        		<div class="row">
+							<div class="col-md-6">
+								<Label>Ingredients</Label>
+									
+								<textarea></textarea>
+							</div>
+							
+							<div class="col-md-6">
+								<div class="form-group">
+		    						<label for="recipeimage">Upload Recipe Image</label>
+		    						<input type="file" class="form-control-file" id="recipeimage">
+		  						</div>
+							</div>
+						</div>
+						</div>	  
+						<hr>
+					<div class="times">
+						<div class="container">
+			        		<div class="row">
+								<div class="col-md-3">Prep Time<br> <input type="text" name="preptime" id="preptime"></div>
+								<div class="col-md-3">Cook Time <br> <input type="text" name="cooktime" id="cooktime"></div>
+								<div class="col-md-3">Total Time<br> <input type="text" name="totaltime" id="totaltime"></div>
+				            </div>
+			        	</div>
+					</div>
+				
+					<div>
+						<label></label>
+					</div>
+					<hr>
+					<button class="btn btn-primary" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div>
+		<p align="center">
+			Personal Details goes here.
+		</p>
+
+		<div class="favRecipe">
+		<p class="favouritesrecipe">
+			User's Recipes goes here with modify and delete buttons. When modify is clicked, displays add recipes form with the details of selected recipe in the fields.<br>
+			
+		</p>
+		</div>
+
+		<p>
+			
+		</p>
+	</div>
+</div>
+	
+	<script type="text/javascript">
+		$('#myList a').click(function (e) {
+  			e.preventDefault()
+  			$(this).tab('show')
+		})
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

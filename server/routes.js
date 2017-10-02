@@ -1,14 +1,14 @@
 
 global.recipes = [
-    {id: 1, name: "Rice", reviews: ['very nice','i love it','keep it up'], upvotes: 8},
-    {id: 2, name: "Oats", reviews: ['very short','Interesting','keep it going'], upvotes: 8}, 
+    {id: 1, name: "Rice", reviews: ['very nice','i love it','keep it up'], upvotes: 2},
+    {id: 2, name: "Oats", reviews: ['very short','Interesting','keep it going'], upvotes: 55}, 
     {id: 3, name: "Porridge", reviews: ['very good','cool stuff'], upvotes: 8}, 
-    {id: 4, name: "Beans", reviews: ['quite nice','i want it','keep the flag high'], upvotes: 8}];
+    {id: 4, name: "Beans", reviews: ['quite nice','i want it','keep the flag high'], upvotes: 100}];
 
 const Route = (app) => {
     app.get('/api/v1/recipes', (req, res) => {
         return res.json({
-            status: "error",
+            status: "Found",
             message: global.recipes
         });
     });
@@ -96,6 +96,15 @@ const Route = (app) => {
                 });
         
     });
-    }
+
+    app.get('/api/v1/recipes?sort=upvotes&order=des', (req, res) => {
+          
+        return res.json({
+            status: "Successful Get",
+            message: global.recipes.sort((a,b)=>a.upvotes - b.upvotes)
+        });
+    });
+
+}
     
 export default Route;

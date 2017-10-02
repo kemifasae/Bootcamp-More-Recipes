@@ -56,7 +56,24 @@ const Route = (app) => {
                     error: true
                 });
         
-    })
+    });
+
+    app.delete("/api/v1/recipes/:recipeid",(req,res)=>{
+        for(let i=0; i<global.recipes.length; i++){
+            if(global.recipes[i].id === parseInt(req.params.recipeid,10)){
+                    global.recipes.splice(i,1);
+                    return res.json({
+                        message: "Success",
+                        error: false
+                    });
+            }
+        }
+            return res.status(404).json({
+                    message: "user not found",
+                    error: true
+                });
+        
+    });
     }
     
 export default Route;

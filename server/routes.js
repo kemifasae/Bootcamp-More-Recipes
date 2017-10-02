@@ -10,6 +10,20 @@ const Route = (app) => {
             
         });
     });
-}
+
+    app.post('/api/v1/recipes', (req, res) => {
+        if(!req.body.name){
+            return res.json({
+                message: "user is missing",
+                error: true
+            })
+        }
+        global.recipes.push(req.body);
+        return res.json({
+            message: "Success",
+            error: false
+        });
+      });
+    }
     
 export default Route;

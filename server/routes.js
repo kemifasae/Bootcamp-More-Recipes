@@ -40,6 +40,23 @@ const Route = (app) => {
                 });
             
     });
+
+    app.put("/api/v1/recipes/:recipeid",(req,res)=>{
+        for(let i=0; i<global.recipes.length; i++){
+            if(global.recipes[i].id === parseInt(req.params.recipeid,10)){
+                global.recipes[i].name = req.body.name;
+                return res.json({
+                    message: "Success",
+                    error: false
+                });
+            }
+        }
+            return res.status(404).json({
+                    message: "user not found",
+                    error: true
+                });
+        
+    })
     }
     
 export default Route;

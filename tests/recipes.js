@@ -157,4 +157,20 @@ describe('Routes', () => {
                         });
                     });
                 });
+
+                //test for post recipe review route
+                describe('POST /api/v1/recipes/2/reviews', () =>{
+                    it('it should return succesful', () =>{
+                      request(app)
+                        .post('/api/v1/recipes/2/reviews')
+                        .send({
+                          review: 'Loving this recipe'
+                        })
+                        .expect(201)
+                        .end((err, res) =>{
+                          res.body.status.should.equal('Inserted successfully');
+                          res.body.should.be.a('array');
+                          done();
+                        });
+                    });
 });

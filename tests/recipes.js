@@ -71,4 +71,21 @@ describe('Routes', () => {
           });
       });
   });
+
+  //test the get route
+  describe('/GET recipes point', () => {
+    it('it should respond with json', (done) => {
+        request(app)
+            .get('/api/v1/recipes')
+            .set('Accept','application/json')
+            .expect(200)
+            .end((err, res) => {
+                if (err) throw err;
+                //res.should.have.status(200);
+                //res.body.should.be.a('array');
+                //res.body.length.should.be.eql(0);
+            done();
+            });
+    });
+});
 });

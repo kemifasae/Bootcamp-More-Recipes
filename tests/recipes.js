@@ -86,6 +86,29 @@ describe('Routes', () => {
                 //res.body.length.should.be.eql(0);
             done();
             });
+        });
     });
-});
+
+     /*
+        * Test the /POST route
+        */
+        describe('/POST recipes endpoint', () => {
+            it('it should POST a recipe without a name', (done) => {
+                let recipe = {
+                    name: "Pounded yam",
+                    id: 5
+                }
+                request(app)
+                    .post('/api/v1/recipes')
+                    .send(recipe)
+                    .expect(201)
+                    .end((err, res) => {
+                        if (err) throw err;
+                        //res.should.have.status(200);
+                        //res.body.should.be.a('object');
+                        //res.body.should.have.property('errors');
+                    done();
+                    });
+            });
+        });
 });

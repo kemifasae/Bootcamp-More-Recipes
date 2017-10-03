@@ -126,6 +126,22 @@ describe('Routes', () => {
                     done();
                     });
                 });
+            });
 
+        /*
+        * Test the /PUT/:id route
+        */
+        describe('/PUT/:id recipe', () => {
+            it('it should UPDATE a recipe with the supplied id', (done) => {
+                request(app)
+                    .put('/api/v1/recipes/1')
+                    .send({name: "New name"})
+                    .expect(200)
+                    .end((err, res) => {
+                        expect (res.body.message).to.be.eql('Updated successfully');
+                        done();
+                        if (err) throw err;
+                    });
+                });
             });
 });

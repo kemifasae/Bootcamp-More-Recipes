@@ -111,4 +111,21 @@ describe('Routes', () => {
                     });
             });
         });
+
+        /*
+        * Test the /GET/:id route
+        */
+        describe('/GET/:/recipe/recipeid endpoint', () => {
+            it('it should return error since the recipe with the specified id does not exist', (done) => {
+                request(app)
+                    .get('/api/v1/recipe/1')
+                    .set('Accept','application/json')
+                    .expect(404)
+                    .end((err, res) => {
+                        if (err) throw err;
+                    done();
+                    });
+                });
+
+            });
 });

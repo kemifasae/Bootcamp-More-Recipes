@@ -7,7 +7,7 @@ global.recipes = [
 
 const Route = (app) => {
     app.get('/api/v1/recipes', (req, res) => {
-        return res.json({
+        return res.status(200).json({
             status: "Found",
             message: global.recipes
         });
@@ -15,13 +15,13 @@ const Route = (app) => {
 
     app.post('/api/v1/recipes', (req, res) => {
         if(!req.body.name){
-            return res.json({
+            return res.status(400).json({
                 status:"error",
-                message: "user is missing"
+                message: "Must have a name"
             })
         }
         global.recipes.push(req.body);
-        return res.json({
+        return res.status(201).json({
             status:"Success",
             message: "Posted successfully"
         });
@@ -30,9 +30,9 @@ const Route = (app) => {
       app.get('/api/v1/recipes/:recipeid', (req,res)=>{
         for(let i=0; i<global.recipes.length; i++){
             if(global.recipes[i].id === parseInt(req.params.recipeid)){
-                return res.json({
+                return res.status(200).json({
                     status:"Success",
-                    recipe : global.recipes[i]
+                    message: global.recipes[i]
                 });
             }
         }
@@ -47,7 +47,7 @@ const Route = (app) => {
         for(let i=0; i<global.recipes.length; i++){
             if(global.recipes[i].id === parseInt(req.params.recipeid,10)){
                 global.recipes[i].name = req.body.name;
-                return res.json({
+                return res.status(200).json({
                     status: "Successful",
                     message: "Updated successfully"
                     
@@ -66,7 +66,7 @@ const Route = (app) => {
         for(let i=0; i<global.recipes.length; i++){
             if(global.recipes[i].id === parseInt(req.params.recipeid,10)){
                     global.recipes.splice(i,1);
-                    return res.json({
+                    return res.status(200).json({
                         status: "Success",
                         message: "Delete done"
                     });
@@ -84,7 +84,7 @@ const Route = (app) => {
         for(let i=0; i<global.recipes.length; i++){
             if(global.recipes[i].id === parseInt(req.params.recipeid)){
                 global.recipes[i].reviews.push(req.body.reviews);
-                    return res.json({
+                    return res.status(201).json({
                         status: "Success",
                         message: "Inserted successfully"
                     });

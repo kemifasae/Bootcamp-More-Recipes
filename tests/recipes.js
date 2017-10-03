@@ -144,4 +144,17 @@ describe('Routes', () => {
                     });
                 });
             });
+
+            //test delete/:id route
+            describe('/DELETE/:id recipe', () => {
+                it('it should DELETE a recipe with the supplied id', (done) => {
+                        request(app)
+                        .delete('/api/v1/recipes/1')
+                        .expect(200)
+                        .end((err, res) => {
+                            res.body.should.have.property('message').eql('Delete done');
+                            done();
+                        });
+                    });
+                });
 });

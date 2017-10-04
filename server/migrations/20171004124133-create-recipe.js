@@ -1,4 +1,4 @@
-'use strict';
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Recipes', {
@@ -8,23 +8,30 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      recipeid: {
-        type: Sequelize.NUMBER
-      },
       recipename: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       userid: {
-        type: Sequelize.NUMBER
+        type: Sequelize.NUMBER,
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'User',
+          key: 'id',
+          as: 'userid',
+        },
       },
       author: {
         type: Sequelize.STRING
       },
       methods: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       ingredients: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,
@@ -36,7 +43,5 @@ module.exports = {
       }
     });
   },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Recipes');
-  }
+  down: queryInterface => queryInterface.dropTable('Recipes'),
 };

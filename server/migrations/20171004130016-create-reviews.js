@@ -1,4 +1,3 @@
-'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Reviews', {
@@ -8,11 +7,23 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      reviewid: {
-        type: Sequelize.NUMBER
+      userid: {
+        type: Sequelize.NUMBER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Recipe',
+          key: 'id',
+          as: 'recipeId',
+        },
       },
       recipeid: {
-        type: Sequelize.NUMBER
+        type: Sequelize.NUMBER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Recipe',
+          key: 'id',
+          as: 'recipeId',
+        },
       },
       reviewmessage: {
         type: Sequelize.STRING
@@ -27,7 +38,5 @@ module.exports = {
       }
     });
   },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Reviews');
-  }
+  down: queryInterface => queryInterface.dropTable('Reviews'),
 };

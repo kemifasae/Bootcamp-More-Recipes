@@ -1,4 +1,4 @@
-'use strict';
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Favorites', {
@@ -8,14 +8,25 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      favid: {
-        type: Sequelize.NUMBER
-      },
       recipeid: {
-        type: Sequelize.NUMBER
+        type: Sequelize.NUMBER,
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Recipe',
+          key: 'id',
+          as: 'recipeid',
+        },
       },
       userid: {
-        type: Sequelize.NUMBER
+        type: Sequelize.NUMBER,
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'User',
+          key: 'id',
+          as: 'userid',
+        },
       },
       createdAt: {
         allowNull: false,
@@ -27,7 +38,5 @@ module.exports = {
       }
     });
   },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Favorites');
-  }
+  down: queryInterface => queryInterface.dropTable('Favorites'),
 };

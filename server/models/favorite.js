@@ -1,15 +1,19 @@
-'use strict';
+
 module.exports = (sequelize, DataTypes) => {
-  var Favorite = sequelize.define('Favorite', {
-    favid: DataTypes.NUMBER,
+  const Favorite = sequelize.define('Favorite', {
     recipeid: DataTypes.NUMBER,
     userid: DataTypes.NUMBER
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
   });
-  return Favorite;
+
+  Favorite.associate = (models) => {
+    Favorite.belongsTo(models.User, {
+      foreignKey: 'userid',
+      onDelete: 'CASCADE',
+    });
+
+    Favorite.belongsTo(models.Recipe, {
+      foreignKey: 'recipeid',
+      onDelete: 'CASCADE'
+    });
+  };
 };

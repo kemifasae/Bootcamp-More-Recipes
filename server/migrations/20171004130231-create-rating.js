@@ -1,7 +1,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Rating', {
+    return queryInterface.createTable('Ratings', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -9,22 +9,24 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       recipeid: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
         references: {
-          model: 'Recipe',
+          model: 'Recipes',
           key: 'id',
           as: 'recipeId',
         },
       },
       rating: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
       },
       userid: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
         references: {
-          model: 'User',
+          model: 'Users',
           key: 'id',
           as: 'userId',
         },
@@ -39,5 +41,5 @@ module.exports = {
       }
     });
   },
-  down: queryInterface => queryInterface.dropTable('Rating'),
+  down: queryInterface => queryInterface.dropTable('Ratings', { force: true, cascade: true }),
 };

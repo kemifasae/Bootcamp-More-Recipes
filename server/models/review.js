@@ -1,8 +1,7 @@
-
 module.exports = (sequelize, DataTypes) => {
   const Review = sequelize.define('Review', {
-    recipeid: DataTypes.NUMBER,
-    userid: DataTypes.NUMBER,
+    recipeid: DataTypes.INTEGER,
+    userid: DataTypes.INTEGER,
     reviewmessage: DataTypes.STRING
   });
 
@@ -15,6 +14,6 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: 'recipeid',
       onDelete: 'CASCADE',
     });
-    return Reviews;
   };
+  return Review;
 };

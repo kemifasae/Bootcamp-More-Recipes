@@ -1,9 +1,8 @@
-
 module.exports = (sequelize, DataTypes) => {
   const Rating = sequelize.define('Rating', {
-    recipeid: DataTypes.NUMBER,
+    recipeid: DataTypes.INTEGER,
     rating: DataTypes.BOOLEAN,
-    userid: DataTypes.NUMBER
+    userid: DataTypes.INTEGER,
   });
 
   Rating.associate = (models) => {

@@ -1,8 +1,7 @@
-
 module.exports = (sequelize, DataTypes) => {
   const Favorite = sequelize.define('Favorite', {
-    recipeid: DataTypes.NUMBER,
-    userid: DataTypes.NUMBER
+    recipeid: DataTypes.INTEGER,
+    userid: DataTypes.INTEGER,
   });
 
   Favorite.associate = (models) => {
@@ -16,4 +15,5 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: 'CASCADE'
     });
   };
+  return Favorite;
 };

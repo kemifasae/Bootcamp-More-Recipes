@@ -1,12 +1,14 @@
-
-
-export default (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
   const Recipe = sequelize.define('Recipe', {
-    recipename: DataTypes.STRING,
-    userid: DataTypes.NUMBER,
+    recipeName: DataTypes.STRING,
+    userId: DataTypes.INTEGER,
     author: DataTypes.STRING,
+    prepTime: DataTypes.STRING,
+    category: DataTypes.STRING,
     methods: DataTypes.STRING,
     ingredients: DataTypes.STRING,
+    upvotes: DataTypes.INTEGER,
+    downvotes: DataTypes.INTEGER,
   });
 
   Recipe.associate = (models) => {

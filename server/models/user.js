@@ -1,14 +1,11 @@
-
-export default (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
-    userid: DataTypes.NUMBER,
     firstname: DataTypes.STRING,
     lastname: DataTypes.STRING,
     displayname: DataTypes.STRING,
     email: DataTypes.STRING,
     password: DataTypes.STRING
   });
-
   User.associate = (models) => {
     User.hasMany(models.Recipe, {
       foreignKey: 'userid',

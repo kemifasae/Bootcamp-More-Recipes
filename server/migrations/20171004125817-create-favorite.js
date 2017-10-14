@@ -9,21 +9,21 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       recipeid: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          model: 'Recipe',
+          model: 'Recipes',
           key: 'id',
           as: 'recipeid',
         },
       },
       userid: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          model: 'User',
+          model: 'Users',
           key: 'id',
           as: 'userid',
         },
@@ -38,5 +38,5 @@ module.exports = {
       }
     });
   },
-  down: queryInterface => queryInterface.dropTable('Favorites'),
+  down: queryInterface => queryInterface.dropTable('Favorites', { force: true, cascade: true }),
 };

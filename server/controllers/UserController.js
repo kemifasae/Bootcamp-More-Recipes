@@ -1,7 +1,5 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import genToken from '../validators/jwt';
-import UserValidator from '../validators/UserValidator';
 
 require('dotenv').config();
 

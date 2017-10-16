@@ -7,11 +7,11 @@ module.exports = (sequelize, DataTypes) => {
 
   Review.associate = (models) => {
     Review.belongsTo(models.User, {
-      foreignKey: 'userid',
+      foreignKey: 'userId',
       onDelete: 'CASCADE',
     });
     Review.belongsTo(models.Recipe, {
-      foreignKey: 'recipeid',
+      foreignKey: 'recipeId',
       onDelete: 'CASCADE',
     });
   };

@@ -2,7 +2,6 @@ module.exports = (sequelize, DataTypes) => {
   const Recipe = sequelize.define('Recipe', {
     recipeName: DataTypes.STRING,
     userId: DataTypes.INTEGER,
-    author: DataTypes.STRING,
     prepTime: DataTypes.STRING,
     category: DataTypes.STRING,
     methods: DataTypes.STRING,
@@ -13,19 +12,19 @@ module.exports = (sequelize, DataTypes) => {
 
   Recipe.associate = (models) => {
     Recipe.belongsTo(models.User, {
-      foreignKey: 'userid',
+      foreignKey: 'userId',
       onDelete: 'CASCADE',
     });
     Recipe.hasMany(models.Rating, {
-      foreignKey: 'recipeid',
+      foreignKey: 'recipeId',
       onDelete: 'CASCADE',
     });
     Recipe.hasMany(models.Favorite, {
-      foreignKey: 'recipeid',
+      foreignKey: 'recipeId',
       onDelete: 'CASCADE',
     });
     Recipe.hasMany(models.Review, {
-      foreignKey: 'recipeid',
+      foreignKey: 'recipeId',
       onDelete: 'CASCADE',
     });
   };

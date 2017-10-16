@@ -41,15 +41,20 @@ export default class UserController {
               })
               .then((createdUser) => {
                 delete createdUser.dataValues.password;
-                response.status(201).send(createdUser);
+                resonse.status(201).json({
+                  status: 'Success',
+                  data: {
+                    userName: `${createdUser.firstName} ${createdUser.lastname}`,
+                  },
+                });
               })
               .catch(error => response.status(500).send(error.toString()));
           });
         }
-         /* return response.status(404).send({
-            status: ' ',
-            message: 'User already exists!'
-          }); */
+        return response.status(200).send({
+          status: 'Found',
+          message: 'User already exists!'
+        });
         })
       .catch(error => response.status(500).send(error.toString()));
 }
@@ -75,17 +80,22 @@ export default class UserController {
                   message: 'Wrong Password',
                 });
               }
-              const token = jwt.sign({ email: user.dataValues.email }, process.env.JWT_SECRET);
+              const token = jwt.sign({ email: user.dataValues.email }, process.env.JWT_SECRET, { expiresIn: 60 * 60 });
               delete user.dataValues.password;
               return response.status(200).send({
                 message: 'login successful', user, token });
             });
+        } else {
+          return response.status(401).json({
+            status: 'Unsuccessful',
+            message: 'User not found',
+          });
         }
       })
       .catch(error => response.status(500).send(error.toString()));
-  }
+    }
   return response.status(200).send({
     message: 'Invalid Parameters', user, token });
-}
+    }
 }
 

@@ -13,6 +13,11 @@ const userRules = {
   email: 'required|email',
   password: 'required|min:8',
 };
+const loginRules = {
+  email: 'required|email',
+  password: 'required|min:8',
+};
+
 const saltRounds = 10;
 
 /**
@@ -79,38 +84,49 @@ export default class UserController {
 
   static login(request, response) {
     if (request.body.email && request.body.password) {
-      return User
-        .find({
-          where: {
-            email: request.body.email
-          },
-          attributes: {
-            exclude: ['createdAt', 'updatedAt']
-          },
-        })
-        .then((user) => {
-          if (user) {
-            bcrypt.compare(
-              request.body.password, user.dataValues.password, (err, resp) => {
-                if (resp === false) {
-                  return response.status(400).send({
-                    message: 'Wrong Password',
+      const validate = new Validator(request.body, loginRules);
+      if (validate.passes()) {
+        return User
+          .find({
+            where: {
+              email: request.body.email
+            },
+            attributes: {
+              exclude: ['createdAt', 'updatedAt']
+            },
+          })
+          .then((user) => {
+            if (user) {
+              bcrypt.compare(
+                request.body.password,
+                user.dataValues.password, (err, resp) => {
+                  if (resp === false) {
+                    return response.status(400).send({
+                      message: 'Wrong Password',
+                    });
+                  }
+                  const token = jwt.sign(
+                    { id: user.dataValues.id, email: user.dataValues.email },
+                    process.env.JWT_SECRET, { expiresIn: 60 * 60 });
+                  delete user.dataValues.password;
+                  return response.status(200).send({
+                    message: 'login successful', user, token
                   });
-                }
-                const token = jwt.sign({ id: user.dataValues.id, email: user.dataValues.email }, process.env.JWT_SECRET, { expiresIn: 60 * 60 });
-                delete user.dataValues.password;
-                return response.status(200).send({
-                  message: 'login successful', user, token
                 });
+            } else {
+              return response.status(404).json({
+                status: 'Unsuccessful',
+                message: 'User not found',
               });
-          } else {
-            return response.status(404).json({
-              status: 'Unsuccessful',
-              message: 'User not found',
-            });
-          }
-        })
-        .catch(error => response.status(500).send(error.toString()));
+            }
+          })
+          .catch(error => response.status(500).send(error.toString()));
+      }
+      response.status(400).json({
+        status: 'Unsuccessful',
+        message: 'Invalid data input',
+        errors: validator.errors.all(),
+      });
     }
     return response.status(400).send({
       message: 'Invalid Parameters'

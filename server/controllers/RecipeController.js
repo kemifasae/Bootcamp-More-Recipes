@@ -3,7 +3,6 @@ import RecipeValidator from '../validators/RecipeValidator';
 
 
 const Recipe = require('../models').Recipe;
-const User = require('../models').User;
 const Review = require('../models').Review;
 const Favorite = require('../models').Favorite;
 
@@ -14,6 +13,16 @@ const recipeRules = {
   category: 'string',
   ingredients: 'required|min:15',
   methods: 'required|min:10',
+  upvotes: 'integer',
+  downvotes: 'integer'
+};
+const updateRules = {
+  recipeName: 'between:8,90',
+  summary: 'between:8,140',
+  prepTime: 'between:3,30',
+  category: 'string',
+  ingredients: 'min:15',
+  methods: 'min:10',
   upvotes: 'integer',
   downvotes: 'integer'
 };
@@ -88,7 +97,7 @@ export default class RecipeController {
     Recipe.findById(recipeId)
       .then((recipe) => {
         if (RecipeValidator.allowUpdate(request, response, recipe.userId)) {
-          const validate = new Validator(request.body, recipeRules);
+          const validate = new Validator(request.body, updateRules);
           if (validate.passes()) {
             return recipe
               .update({
@@ -107,7 +116,7 @@ export default class RecipeController {
                   status: 'Successful',
                   data: `${recipe.recipeName} has been updated`,
                 });
-              }).catch((err => response.status(500).send(err.toString())));
+              }).catch((error => response.status(500).send(error.toString())));
           }
           response.status(400).json({
             status: 'Unsuccessful',
@@ -199,10 +208,10 @@ export default class RecipeController {
       );
   }
 
-  static getFavoriteRecipes(req, res) {
+  static getFavoriteRecipes(request, response) {
     Favorite.findAll({
       where: {
-        userId: req.params.userId,
+        userId: request.params.userId,
       },
       include: [{
         model: Recipes,
@@ -210,15 +219,17 @@ export default class RecipeController {
       }],
     }).then((favoriteRecipes) => {
       if (favoriteRecipes.length === 0) {
-        res.status(200).json({
-          status: 'Successful', message: 'You Currently Have No Favorite Recipes'
+        response.status(200).json({
+          status: 'Successful',
+          message: 'You Currently Have No Favorite Recipes'
         });
       } else {
-        res.status(200).json({
-          status: 'Successful', data: favoriteRecipes
+        response.status(200).json({
+          status: 'Successful',
+          data: favoriteRecipes
         });
       }
     })
-      .catch(error => res.status(400).send(error));
+      .catch(error => response.status(400).send(error));
   }
 }

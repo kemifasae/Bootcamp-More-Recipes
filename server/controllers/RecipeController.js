@@ -87,15 +87,19 @@ export default class RecipeController {
   // get all recipes
   static getAllRecipes(request, response) {
     Recipe.findAll({})
-      .then(result => response.json({
-        status: 'Successful',
-        data: result
-      }))
-      .catch(error => response.status(200).json({
-        message: 'no recipes at all',
-        status: error
+      .then((result) => {
+        if (result.length === 0) {
+          response.status(200).send(json({
+            status: 'error',
+            message: 'no recipes at all'
+          }));
+        }
+        response.status(200).send(json({
+          status: 'Successful',
+          data: result
+        }));
       })
-      );
+      .catch(error => response.status(500).send(error.toString()));
   }
 
   static getRecipe(request, response) {
@@ -105,7 +109,7 @@ export default class RecipeController {
     })
       .then((recipe) => {
         if (!recipe) {
-          return response.status(401).json({
+          return response.status(404).json({
             status: 'Unsuccessful',
             message: 'Recipe not found',
           });

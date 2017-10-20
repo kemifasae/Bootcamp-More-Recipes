@@ -13,7 +13,6 @@ dotenv.config();
 
 const User = require('../server/models').User;
 const Recipe = require('../server/models').Recipe;
-const Review = require('../server/models').Review;
 
 const userToken = jwt.sign(
   { id: 1 },

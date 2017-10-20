@@ -7,7 +7,7 @@ require('dotenv').config();
 const User = require('../models').User;
 
 const userRules = {
-  firstame: 'required|between:3,20',
+  firstname: 'required|between:3,20',
   lastname: 'required|between:3,25',
   displayname: 'required|between:6,15',
   email: 'required|email',
@@ -35,7 +35,7 @@ export default class UserController {
    * @memberof UserController
    */
   static create(request, response) {
-    return User
+    User
       .findOne({
         where: {
           email: request.body.email,
@@ -56,80 +56,76 @@ export default class UserController {
                 })
                 .then((createdUser) => {
                   delete createdUser.dataValues.password;
-                  resonse.status(201).json({
-                    status: 'Success',
-                    data: {
-                      userName: `${createdUser.firstName}
-                    ${createdUser.lastname}`,
-                    },
+                  response.status(201).send({
+                    status: 'Successful',
+                    data: createdUser,
                   });
                 })
-                .catch(error => response.status(500).send(error.toString()));
+                .catch(error => response.send({
+                  status: 'Success',
+                  error: error.toString(),
+                }));
+            });
+          } else {
+            return response.status(400).json({
+              status: 'Unsuccessful',
+              message: 'Invalid data input',
+              errors: validate.errors.all(),
             });
           }
-          response.status(400).json({
-            status: 'Unsuccessful',
-            message: 'Invalid data input',
-            errors: validator.errors.all(),
+        } else {
+          return response.status(400).send({
+            status: 'Found',
+            message: 'User already exists!'
           });
         }
-        return response.status(200).send({
-          status: 'Found',
-          message: 'User already exists!'
-        });
       })
       .catch(error => response.status(500).send(error.toString()));
   }
 
 
   static login(request, response) {
-    if (request.body.email && request.body.password) {
-      const validate = new Validator(request.body, loginRules);
-      if (validate.passes()) {
-        return User
-          .find({
-            where: {
-              email: request.body.email
-            },
-            attributes: {
-              exclude: ['createdAt', 'updatedAt']
-            },
-          })
-          .then((user) => {
-            if (user) {
-              bcrypt.compare(
-                request.body.password,
-                user.dataValues.password, (err, resp) => {
-                  if (resp === false) {
-                    return response.status(400).send({
-                      message: 'Wrong Password',
-                    });
-                  }
-                  const token = jwt.sign(
-                    { id: user.dataValues.id, email: user.dataValues.email },
-                    process.env.JWT_SECRET, { expiresIn: 60 * 60 });
-                  delete user.dataValues.password;
-                  return response.status(200).send({
-                    message: 'login successful', user, token
+    const validate = new Validator(request.body, loginRules);
+    if (validate.passes()) {
+      return User
+        .find({
+          where: {
+            email: request.body.email
+          },
+          attributes: {
+            exclude: ['createdAt', 'updatedAt']
+          },
+        })
+        .then((user) => {
+          if (user) {
+            bcrypt.compare(
+              request.body.password,
+              user.dataValues.password, (err, resp) => {
+                if (resp === false) {
+                  return response.status(401).send({
+                    message: 'Wrong Password',
                   });
+                }
+                const token = jwt.sign(
+                  { id: user.dataValues.id, email: user.dataValues.email },
+                  process.env.JWT_SECRET, { expiresIn: 60 * 60 });
+                delete user.dataValues.password;
+                return response.status(200).send({
+                  message: 'login successful', user, token
                 });
-            } else {
-              return response.status(404).json({
-                status: 'Unsuccessful',
-                message: 'User not found',
               });
-            }
-          })
-          .catch(error => response.status(500).send(error.toString()));
-      }
-      response.status(400).json({
-        status: 'Unsuccessful',
-        message: 'Invalid data input',
-        errors: validator.errors.all(),
-      });
-    }
-    return response.status(400).send({
-      message: 'Invalid Parameters'
+          } else {
+            return response.status(404).json({
+              status: 'Unsuccessful',
+              message: 'User not found',
+            });
+          }
+        })
+        .catch(error => response.status(500).send(error.toString()));
+    } response.status(400).json({
+      status: 'Unsuccessful',
+      message: 'Invalid data input',
+      errors: validate.errors.all(),
     });
   }
 }

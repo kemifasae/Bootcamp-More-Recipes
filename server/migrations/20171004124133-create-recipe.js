@@ -21,6 +21,9 @@ module.exports = {
           key: 'id',
         },
       },
+      summary: {
+        type: Sequelize.STRING,
+      },
       prepTime: {
         type: Sequelize.STRING,
       },

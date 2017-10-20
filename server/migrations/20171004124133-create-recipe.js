@@ -19,13 +19,12 @@ module.exports = {
         references: {
           model: 'Users',
           key: 'id',
-          as: 'userid',
         },
       },
-      author: {
+      summary: {
         type: Sequelize.STRING,
       },
-      preptime: {
+      prepTime: {
         type: Sequelize.STRING,
       },
       category: {

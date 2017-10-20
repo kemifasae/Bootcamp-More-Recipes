@@ -8,13 +8,12 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      recipeid: {
+      recipeId: {
         type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
         references: {
           model: 'Recipes',
           key: 'id',
-          as: 'recipeId',
         },
       },
       rating: {
@@ -22,13 +21,12 @@ module.exports = {
         allowNull: false,
         defaultValue: false,
       },
-      userid: {
+      userId: {
         type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
         references: {
           model: 'Users',
           key: 'id',
-          as: 'userId',
         },
       },
       createdAt: {

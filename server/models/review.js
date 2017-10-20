@@ -2,16 +2,16 @@ module.exports = (sequelize, DataTypes) => {
   const Review = sequelize.define('Review', {
     recipeid: DataTypes.INTEGER,
     userid: DataTypes.INTEGER,
-    reviewmessage: DataTypes.STRING
+    message: DataTypes.STRING
   });
 
   Review.associate = (models) => {
     Review.belongsTo(models.User, {
-      foreignKey: 'userid',
+      foreignKey: 'userId',
       onDelete: 'CASCADE',
     });
     Review.belongsTo(models.Recipe, {
-      foreignKey: 'recipeid',
+      foreignKey: 'recipeId',
       onDelete: 'CASCADE',
     });
   };

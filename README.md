@@ -1,8 +1,8 @@
 # Bootcamp-More-Recipes
 
 The More-Recipes app is an avenue for people to showcase their interesting and unique recipes.
-It allows a user to post a recipe he/she has come up with and get feedback in form of upvotes, downvotes and reviews from users who explore that recipe.
-The application has the following features: 
+It allows a user to post a recipe he/she has come up with and get feedback in form of upvotes, downvotes  and reviews from users who explore that recipe.
+The application has the following features:
     - sign up
     - sign in
     - upvote recipe
@@ -15,7 +15,7 @@ Only registered users are allowed to do the following:
     - make reviews on other recipes
 
 #Project Dependencies
-    Dependencies
+    #Dependencies
         babel-cli: Babel Command Line
         babel-core: Babel Core. It compiles es6 used in the application to es5
         babel-eslint: Custom Parser for ESlint
@@ -31,7 +31,7 @@ Only registered users are allowed to do the following:
         pg-hstore: A module for serializing and deserializing JSON data into hstore format
         sequelize: Multi dialect ORM for NodeJS
         validator: A library of string validators and sanitizers.
-    Dev-Dependencies
+    #Dev-Dependencies
         chai: BDD/TDD Assertion Library for NodeJS and the web
         eslint: A syntax highlighter.
         eslint-config-airbnb-base: Airbnb's bade JS Eslint config.
@@ -40,7 +40,7 @@ Only registered users are allowed to do the following:
         nodemon: A simple monitor script for development use. For Live Reloading
         supertest: SuperAgent driven library for testing HTTP servers
 
-        
+
     The app has the following API endpoints to access each section.
         - POST:/api/users/signup (route which allows users to sign up on the app)
         - POST:/api/users/signip (route which allows users to sign in on the app)
@@ -53,5 +53,5 @@ Only registered users are allowed to do the following:
         - GET:/api/recipes?sort=upvotes&order=desc (which allows a user to get just recipes with the most upvotes)
 
 
-        
+
 

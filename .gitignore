@@ -60,3 +60,4 @@ typings/
 #package lock
 package-lock.json
 
+logfile

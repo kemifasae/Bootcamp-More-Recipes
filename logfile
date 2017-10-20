@@ -1855,3 +1855,5 @@ LOG:  could not receive data from client: An existing connection was forcibly cl
 LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
 	
 FATAL:  connection to client lost
+WARNING:  worker took too long to start; canceled
+WARNING:  autovacuum worker started without a worker entry

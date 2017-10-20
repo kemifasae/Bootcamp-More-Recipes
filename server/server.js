@@ -6,7 +6,7 @@ app.set('port', port);
 
 const server = http.createServer(app);
 server.listen(port, () => {
-    console.log('App running');
+  console.log('App running');
 });
 
 export default server;

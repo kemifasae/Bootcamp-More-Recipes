@@ -30,7 +30,7 @@ body.viewRecipe{
 
 }
 #persona{
-	border: 2px solid;
+	border: 1px;
 }
 .img-responsive.imgcent{
 	display: block;
@@ -104,7 +104,9 @@ input.suby{
 	color: white;
 }
 #carouselExampleSlidesOnly{
-	width: 1000px;
+	width: 1500px;
+	display: block;
+	margin-left: 50px;
 }
 .recdetail{
 	width: 500px;
@@ -128,11 +130,11 @@ input.suby{
 
 .method{
 	padding-left: 20px;
-	border: 2px solid;
+	
 }
 #ingredients{
 	padding-left: 20px;
-	border: 2px solid;
+	
 }
 .reviews{
 	padding-left: 20px;

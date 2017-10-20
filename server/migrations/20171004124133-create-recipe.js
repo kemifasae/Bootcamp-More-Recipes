@@ -8,22 +8,33 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      recipename: {
+      recipeName: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      userid: {
-        type: Sequelize.NUMBER,
+      userId: {
+        type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          model: 'User',
+          model: 'Users',
           key: 'id',
-          as: 'userid',
         },
       },
-      author: {
-        type: Sequelize.STRING
+      summary: {
+        type: Sequelize.STRING,
+      },
+      prepTime: {
+        type: Sequelize.STRING,
+      },
+      category: {
+        type: Sequelize.STRING,
+      },
+      upvotes: {
+        type: Sequelize.INTEGER,
+      },
+      downvotes: {
+        type: Sequelize.INTEGER,
       },
       methods: {
         type: Sequelize.STRING,
@@ -43,5 +54,5 @@ module.exports = {
       }
     });
   },
-  down: queryInterface => queryInterface.dropTable('Recipes'),
+  down: queryInterface => queryInterface.dropTable('Recipes', { force: true, cascade: true }),
 };

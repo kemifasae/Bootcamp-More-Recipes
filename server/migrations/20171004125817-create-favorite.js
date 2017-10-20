@@ -8,24 +8,22 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      recipeid: {
-        type: Sequelize.NUMBER,
+      recipeId: {
+        type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          model: 'Recipe',
+          model: 'Recipes',
           key: 'id',
-          as: 'recipeid',
         },
       },
-      userid: {
-        type: Sequelize.NUMBER,
+      userId: {
+        type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          model: 'User',
+          model: 'Users',
           key: 'id',
-          as: 'userid',
         },
       },
       createdAt: {
@@ -38,5 +36,5 @@ module.exports = {
       }
     });
   },
-  down: queryInterface => queryInterface.dropTable('Favorites'),
+  down: queryInterface => queryInterface.dropTable('Favorites', { force: true, cascade: true }),
 };

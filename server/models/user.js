@@ -1,23 +1,20 @@
-
-export default (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
-    userid: DataTypes.NUMBER,
     firstname: DataTypes.STRING,
     lastname: DataTypes.STRING,
     displayname: DataTypes.STRING,
     email: DataTypes.STRING,
     password: DataTypes.STRING
   });
-
   User.associate = (models) => {
     User.hasMany(models.Recipe, {
-      foreignKey: 'userid',
+      foreignKey: 'userId',
     });
     User.hasMany(models.Review, {
-      foreignKey: 'userid',
+      foreignKey: 'userId',
     });
     User.hasMany(models.Favorite, {
-      foreignKey: 'userid',
+      foreignKey: 'userId',
     });
   };
   return User;

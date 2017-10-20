@@ -1,19 +1,18 @@
-
 module.exports = (sequelize, DataTypes) => {
   const Rating = sequelize.define('Rating', {
-    recipeid: DataTypes.NUMBER,
+    recipeId: DataTypes.INTEGER,
     rating: DataTypes.BOOLEAN,
-    userid: DataTypes.NUMBER
+    userId: DataTypes.INTEGER,
   });
 
   Rating.associate = (models) => {
     Rating.belongsTo(models.User, {
-      foreignKey: 'userid',
+      foreignKey: 'userId',
       onDelete: 'CASCADE',
     });
 
     Rating.belongsTo(models.Recipe, {
-      foreignKey: 'recipeid',
+      foreignKey: 'recipeId',
       onDelete: 'CASCADE'
     });
   };

@@ -1,0 +1,1857 @@
+LOG:  database system was interrupted; last known up at 2017-10-04 11:26:15 GMT
+FATAL:  the database system is starting up
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/14EC858: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  statistics collector process (PID 8072) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  autovacuum launcher process (PID 8860) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  terminating any other active server processes
+^CLOG:  database system was interrupted; last known up at 2017-10-04 16:31:41 GMT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/14EC8C8: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-05 15:50:35 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-05 17:30:11 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-05 17:49:02 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  relation "User" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "User" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "User" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "User" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+WARNING:  worker took too long to start; canceled
+WARNING:  autovacuum worker started without a worker entry
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-06 02:23:00 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "Users" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "Users" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "User" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "User" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "User" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "User" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "User" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "User" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "User" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "User" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "Users" does not exist
+STATEMENT:  CREATE TABLE IF NOT EXISTS "Recipes" ("id"   SERIAL , "recipename" VARCHAR(255) NOT NULL, "userid" INTEGER NOT NULL REFERENCES "Users" ("id") ON DELETE CASCADE, "author" VARCHAR(255), "preptime" VARCHAR(255), "category" VARCHAR(255), "upvotes" INTEGER, "downvotes" INTEGER, "methods" VARCHAR(255) NOT NULL, "ingredients" VARCHAR(255) NOT NULL, "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-06 13:12:16 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-07 20:35:21 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-07 22:30:04 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-08 15:53:43 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-08 16:04:19 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-08 19:27:49 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-08 19:39:23 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "displayname" violates not-null constraint
+DETAIL:  Failing row contains (2, kolawole, fasae, null, peterfasae@gmail.com, $2a$10$rS055H3D0758hKgEVmNmB.Bcagoq5tXdjle49gw0CCyeBiuII43X2, 2017-10-08 19:43:39.864+00, 2017-10-08 19:43:39.864+00).
+STATEMENT:  INSERT INTO "Users" ("id","firstname","lastname","email","password","createdAt","updatedAt") VALUES (DEFAULT,'kolawole','fasae','peterfasae@gmail.com','$2a$10$rS055H3D0758hKgEVmNmB.Bcagoq5tXdjle49gw0CCyeBiuII43X2','2017-10-08 19:43:39.864 +00:00','2017-10-08 19:43:39.864 +00:00') RETURNING *;
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-08 19:52:48 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-08 20:24:47 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-08 20:41:14 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (1, null, null, null, 30mins, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-09 14:18:12.074+00, 2017-10-09 14:18:12.074+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","preptime","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-09 14:18:12.074 +00:00','2017-10-09 14:18:12.074 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (2, null, null, null, 30mins, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-09 14:20:56.279+00, 2017-10-09 14:20:56.279+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","preptime","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-09 14:20:56.279 +00:00','2017-10-09 14:20:56.279 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (3, null, null, null, 30mins, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-09 14:21:41.316+00, 2017-10-09 14:21:41.316+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","preptime","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-09 14:21:41.316 +00:00','2017-10-09 14:21:41.316 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (4, null, null, null, 30mins, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-09 14:24:08.664+00, 2017-10-09 14:24:08.664+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","preptime","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-09 14:24:08.664 +00:00','2017-10-09 14:24:08.664 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (5, null, null, null, 30mins, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-09 14:24:16.671+00, 2017-10-09 14:24:16.671+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","preptime","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-09 14:24:16.671 +00:00','2017-10-09 14:24:16.671 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (6, null, null, null, 30mins, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-09 15:22:00.804+00, 2017-10-09 15:22:00.804+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","preptime","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-09 15:22:00.804 +00:00','2017-10-09 15:22:00.804 +00:00') RETURNING *;
+LOG:  database system was interrupted; last known up at 2017-10-09 15:26:53 GMT
+FATAL:  the database system is starting up
+FATAL:  the database system is starting up
+FATAL:  the database system is starting up
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/16B0F20: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 00:59:39 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 01:03:12 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 01:51:29 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 01:53:25 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 01:54:10 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:16:31 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:30:03 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (7, null, null, null, null, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-14 02:32:04.044+00, 2017-10-14 02:32:04.044+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-14 02:32:04.044 +00:00','2017-10-14 02:32:04.044 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (8, null, null, null, null, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-14 02:33:01.648+00, 2017-10-14 02:33:01.648+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-14 02:33:01.648 +00:00','2017-10-14 02:33:01.648 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (9, null, null, null, null, breakfast, null, null, cook, wash and freeze, rice, water,salt,maggi, 2017-10-14 02:33:35.057+00, 2017-10-14 02:33:35.057+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','2017-10-14 02:33:35.057 +00:00','2017-10-14 02:33:35.057 +00:00') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:36:45 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:47:07 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:49:11 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (10, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-14 02:49:25.364+00, 2017-10-14 02:49:25.364+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-14 02:49:25.364 +00:00','2017-10-14 02:49:25.364 +00:00') RETURNING *;
+ERROR:  column "recipeName" of relation "Recipes" does not exist at character 29
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'rice pudding','rice pudding','breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-14 02:50:47.208 +00:00','2017-10-14 02:50:47.208 +00:00') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:51:27 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "userId" of relation "Recipes" does not exist at character 29
+STATEMENT:  INSERT INTO "Recipes" ("id","userId","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'rice pudding','breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-14 02:51:41.157 +00:00','2017-10-14 02:51:41.157 +00:00') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:51:57 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  invalid input syntax for integer: "rice pudding" at character 273
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt","userid") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-14 02:52:09.528 +00:00','2017-10-14 02:52:09.528 +00:00','rice pudding') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-14 02:53:06 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (11, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-14 02:53:18.652+00, 2017-10-14 02:53:18.652+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-14 02:53:18.652 +00:00','2017-10-14 02:53:18.652 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (12, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-14 02:56:35.496+00, 2017-10-14 02:56:35.496+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-14 02:56:35.496 +00:00','2017-10-14 02:56:35.496 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (13, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-14 02:56:43.754+00, 2017-10-14 02:56:43.754+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-14 02:56:43.754 +00:00','2017-10-14 02:56:43.754 +00:00') RETURNING *;
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-15 18:49:45 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "createdAt" violates not-null constraint
+DETAIL:  Failing row contains (14, rice pudding, 1, Oluwakemi, 15 mins, breakfast, 34, 45, cook, wash and freeze, rice, water,salt,maggi, null, null).
+STATEMENT:  INSERT INTO "public"."Recipes" ("id","recipename","userid","author","preptime","category","upvotes","downvotes","methods","ingredients","createdAt","updatedAt") VALUES (14,'rice pudding',1,'Oluwakemi','15 mins','breakfast',34,45,'cook, wash and freeze','rice, water,salt,maggi',NULL,NULL)
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (15, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-15 19:18:47.399+00, 2017-10-15 19:18:47.399+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-15 19:18:47.399 +00:00','2017-10-15 19:18:47.399 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (16, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-15 19:19:38.236+00, 2017-10-15 19:19:38.236+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-15 19:19:38.236 +00:00','2017-10-15 19:19:38.236 +00:00') RETURNING *;
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (17, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-15 19:19:46.396+00, 2017-10-15 19:19:46.396+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-15 19:19:46.396 +00:00','2017-10-15 19:19:46.396 +00:00') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-15 19:46:42 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "recipename" violates not-null constraint
+DETAIL:  Failing row contains (18, null, null, null, null, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-15 19:47:50.477+00, 2017-10-15 19:47:50.477+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-15 19:47:50.477 +00:00','2017-10-15 19:47:50.477 +00:00') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-15 19:55:00 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "userid" violates not-null constraint
+DETAIL:  Failing row contains (19, rice pudding, null, null, 30mins, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-15 19:56:09.345+00, 2017-10-15 19:56:09.345+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","recipename","preptime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'rice pudding','30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-15 19:56:09.345 +00:00','2017-10-15 19:56:09.345 +00:00') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-15 19:57:31 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "userid" violates not-null constraint
+DETAIL:  Failing row contains (20, rice pudding, null, null, 30mins, breakfast, 43, 23, cook, wash and freeze, rice, water,salt,maggi, 2017-10-15 19:57:53.697+00, 2017-10-15 19:57:53.697+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","recipename","preptime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'rice pudding','30mins','breakfast','cook, wash and freeze','rice, water,salt,maggi','43','23','2017-10-15 19:57:53.697 +00:00','2017-10-15 19:57:53.697 +00:00') RETURNING *;
+ERROR:  invalid input syntax for integer: "" at character 174
+STATEMENT:  INSERT INTO "Recipes" ("id","recipename","userid","preptime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'pounded yam','','30mins','dinner','cook, wash and pound','rice, water,salt,maggi, yam','23','10','2017-10-15 20:05:14.251 +00:00','2017-10-15 20:05:14.251 +00:00') RETURNING *;
+LOG:  database system was interrupted; last known up at 2017-10-15 20:07:38 GMT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/16B3860: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:08:05 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:09:56 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:15:25 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:18:39 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:23:54 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:26:28 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:27:12 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:33:56 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:37:00 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:38:58 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:41:20 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:41:48 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:42:27 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 12:57:38 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 13:12:55 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 13:19:41 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 13:21:11 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 13:24:32 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 13:34:47 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 14:15:29 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 14:17:30 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 14:18:48 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 15:17:46 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 15:19:28 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 15:32:14 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 15:54:56 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:04:26 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:07:27 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:16:35 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:17:22 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:18:20 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:19:24 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:29:51 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:48:46 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:54:22 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:57:32 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-16 16:59:14 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 08:20:23 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 09:16:06 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 09:17:08 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 10:15:29 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "recipeName" violates not-null constraint
+DETAIL:  Failing row contains (1, null, 1, null, null, null, null, null, null, 2017-10-17 10:16:25.51+00, 2017-10-17 10:16:25.51+00).
+STATEMENT:  INSERT INTO "Recipes" ("id","userId","createdAt","updatedAt") VALUES (DEFAULT,1,'2017-10-17 10:16:25.510 +00:00','2017-10-17 10:16:25.510 +00:00') RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 10:29:28 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 10:57:46 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 11:14:19 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 11:44:47 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "nan" does not exist at character 186
+STATEMENT:  SELECT "id", "recipeName", "userId", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes", "createdAt", "updatedAt" FROM "Recipes" AS "Recipe" WHERE "Recipe"."id" = NaN;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 13:12:40 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "nan" does not exist at character 186
+STATEMENT:  SELECT "id", "recipeName", "userId", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes", "createdAt", "updatedAt" FROM "Recipes" AS "Recipe" WHERE "Recipe"."id" = NaN;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 13:19:47 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 13:25:21 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 13:45:53 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 13:54:37 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 13:55:34 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "nan" does not exist at character 186
+STATEMENT:  SELECT "id", "recipeName", "userId", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes", "createdAt", "updatedAt" FROM "Recipes" AS "Recipe" WHERE "Recipe"."id" = NaN;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 13:57:32 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "nan" does not exist at character 186
+STATEMENT:  SELECT "id", "recipeName", "userId", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes", "createdAt", "updatedAt" FROM "Recipes" AS "Recipe" WHERE "Recipe"."id" = NaN;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:00:39 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:03:15 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:15:01 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:16:04 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:16:44 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "reviewmessage" of relation "Reviews" does not exist at character 29
+STATEMENT:  INSERT INTO "Reviews" ("id","reviewmessage","createdAt","updatedAt","userId") VALUES (DEFAULT,'I love it too much','2017-10-17 14:16:56.146 +00:00','2017-10-17 14:16:56.146 +00:00',1) RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:18:54 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "reviewmessage" of relation "Reviews" does not exist at character 29
+STATEMENT:  INSERT INTO "Reviews" ("id","reviewmessage","createdAt","updatedAt","userId") VALUES (DEFAULT,'I love it too much','2017-10-17 14:19:14.700 +00:00','2017-10-17 14:19:14.700 +00:00',1) RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:19:59 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "message" violates not-null constraint
+DETAIL:  Failing row contains (1, null, 1, null, 2017-10-17 14:20:15.621+00, 2017-10-17 14:20:15.621+00).
+STATEMENT:  INSERT INTO "Reviews" ("id","createdAt","updatedAt","userId") VALUES (DEFAULT,'2017-10-17 14:20:15.621 +00:00','2017-10-17 14:20:15.621 +00:00',1) RETURNING *;
+ERROR:  null value in column "message" violates not-null constraint
+DETAIL:  Failing row contains (2, null, 1, null, 2017-10-17 14:21:47.494+00, 2017-10-17 14:21:47.494+00).
+STATEMENT:  INSERT INTO "Reviews" ("id","createdAt","updatedAt","userId") VALUES (DEFAULT,'2017-10-17 14:21:47.494 +00:00','2017-10-17 14:21:47.494 +00:00',1) RETURNING *;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:25:13 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:35:25 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 14:55:35 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 15:01:06 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 15:16:17 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 15:19:55 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 15:34:44 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 15:35:58 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 15:37:09 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 15:56:40 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "nan" does not exist at character 186
+STATEMENT:  SELECT "id", "recipeName", "userId", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes", "createdAt", "updatedAt" FROM "Recipes" AS "Recipe" WHERE "Recipe"."id" = NaN;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 16:02:21 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 16:19:40 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-17 16:48:14 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  statistics collector process (PID 10536) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  WAL writer process (PID 1484) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  terminating any other active server processes
+LOG:  all server processes terminated; reinitializing
+LOG:  database system was interrupted; last known up at 2017-10-17 16:48:19 GMT
+^CLOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  redo starts at 0/1729A60
+LOG:  database system was interrupted while in recovery at 2017-10-17 16:51:53 GMT
+HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  redo starts at 0/1729A60
+LOG:  invalid record length at 0/1729E28: wanted 24, got 0
+LOG:  redo done at 0/1729E00
+LOG:  last completed transaction was at log time 2017-10-17 16:48:30.551083+00
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-18 15:11:13 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+WARNING:  worker took too long to start; canceled
+WARNING:  autovacuum worker started without a worker entry
+LOG:  statistics collector process (PID 2656) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  autovacuum launcher process (PID 3692) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  terminating any other active server processes
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+^CLOG:  database system was interrupted; last known up at 2017-10-18 16:17:31 GMT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/17E01B8: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-10-19 09:13:10 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  statistics collector process (PID 4608) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  autovacuum launcher process (PID 11876) was terminated by exception 0xC000013A
+HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+LOG:  terminating any other active server processes
+LOG:  all server processes terminated; reinitializing
+LOG:  database system was interrupted; last known up at 2017-10-19 09:23:16 GMT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/18C4E68: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "Users" does not exist at character 105
+STATEMENT:  SELECT "id", "firstname", "lastname", "displayname", "email", "password", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."email" = 'adefasae@gmail.com' LIMIT 1;
+ERROR:  relation "Users" does not exist
+STATEMENT:  TRUNCATE "Users" RESTART IDENTITY CASCADE
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "Users" does not exist
+STATEMENT:  TRUNCATE "Users" RESTART IDENTITY CASCADE
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "Users" does not exist
+STATEMENT:  TRUNCATE "Users" RESTART IDENTITY CASCADE
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "Users" does not exist
+STATEMENT:  TRUNCATE "Users" RESTART IDENTITY CASCADE
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  relation "Users" does not exist at character 105
+STATEMENT:  SELECT "id", "firstname", "lastname", "displayname", "email", "password", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."email" = 'adefasae@gmail.com' LIMIT 1;
+ERROR:  column Recipe.summary does not exist at character 217
+STATEMENT:  SELECT "id", "recipeName", "userId", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes" FROM "Recipes" AS "Recipe" WHERE "Recipe"."recipeName" = 'chicken pudding' AND "Recipe"."userId" = 19 AND "Recipe"."summary" = 'pudding of life' AND "Recipe"."category" = 'snacks' AND "Recipe"."prepTime" = '25mins' AND "Recipe"."methods" = 'roll the batter
+	fry the sauce
+	do other things' AND "Recipe"."ingredients" = 'flour, water,salt,maggi, vegetables' AND "Recipe"."upvotes" = '30' AND "Recipe"."downvotes" = '9' LIMIT 1;
+ERROR:  column Recipe.summary does not exist at character 217
+STATEMENT:  SELECT "id", "recipeName", "userId", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes" FROM "Recipes" AS "Recipe" WHERE "Recipe"."recipeName" = 'chicken pudding' AND "Recipe"."userId" = 19 AND "Recipe"."summary" = NULL AND "Recipe"."category" = 'snacks' AND "Recipe"."prepTime" = '25mins' AND "Recipe"."methods" = 'roll the batter
+	fry the sauce
+	do other things' AND "Recipe"."ingredients" = 'flour, water,salt,maggi, vegetables' AND "Recipe"."upvotes" = '30' AND "Recipe"."downvotes" = '9' LIMIT 1;
+ERROR:  column "summary" does not exist at character 38
+STATEMENT:  SELECT "id", "recipeName", "userId", "summary", "prepTime", "category", "methods", "ingredients", "upvotes", "downvotes" FROM "Recipes" AS "Recipe" WHERE "Recipe"."recipeName" = 'chicken pudding' AND "Recipe"."userId" = 19 AND "Recipe"."summary" = 'pudding of life' AND "Recipe"."category" = 'snacks' AND "Recipe"."prepTime" = '25mins' AND "Recipe"."methods" = 'roll the batter
+	fry the sauce
+	do other things' AND "Recipe"."ingredients" = 'flour, water,salt,maggi, vegetables' AND "Recipe"."upvotes" = '30' AND "Recipe"."downvotes" = '9' LIMIT 1;
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:28:09.434 +00:00','2017-10-19 21:28:09.434 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:28:09.434 +00:00','2017-10-19 21:28:09.434 +00:00');
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:28:11.969 +00:00','2017-10-19 21:28:11.969 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:28:11.969 +00:00','2017-10-19 21:28:11.969 +00:00');
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:33:27.489 +00:00','2017-10-19 21:33:27.489 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:33:27.489 +00:00','2017-10-19 21:33:27.489 +00:00');
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:33:29.843 +00:00','2017-10-19 21:33:29.843 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:33:29.843 +00:00','2017-10-19 21:33:29.843 +00:00');
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:39:33.646 +00:00','2017-10-19 21:39:33.646 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:39:33.646 +00:00','2017-10-19 21:39:33.646 +00:00');
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:39:36.063 +00:00','2017-10-19 21:39:36.063 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:39:36.063 +00:00','2017-10-19 21:39:36.063 +00:00');
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:48:38.736 +00:00','2017-10-19 21:48:38.736 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:48:38.736 +00:00','2017-10-19 21:48:38.736 +00:00');
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(2) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 21:48:41.119 +00:00','2017-10-19 21:48:41.119 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 21:48:41.119 +00:00','2017-10-19 21:48:41.119 +00:00');
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(1) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 22:11:58.091 +00:00','2017-10-19 22:11:58.091 +00:00') RETURNING *;
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(1) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 22:12:02.931 +00:00','2017-10-19 22:12:02.931 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 22:12:02.931 +00:00','2017-10-19 22:12:02.931 +00:00');
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(1) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 22:12:05.808 +00:00','2017-10-19 22:12:05.808 +00:00'),(DEFAULT,'Pounded Garri and efo soup',2,'typical abeokuta food','45mins','dinner','boil water, pour garri, make the eba, then cook the soup','garri, water, salt, egusi',45,14,'2017-10-19 22:12:05.808 +00:00','2017-10-19 22:12:05.808 +00:00');
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(1) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-19 22:12:08.733 +00:00','2017-10-19 22:12:08.733 +00:00') RETURNING *;
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+ERROR:  insert or update on table "Recipes" violates foreign key constraint "Recipes_userId_fkey"
+DETAIL:  Key (userId)=(1) is not present in table "Users".
+STATEMENT:  INSERT INTO "Recipes" ("id","recipeName","userId","summary","prepTime","category","methods","ingredients","upvotes","downvotes","createdAt","updatedAt") VALUES (DEFAULT,'Pounded Yam and egusi soup',1,'typical ondo and ekiti food','40mins','dinner','peel the yam, cook the yam and them pound, then cook the soup','yam, water, salt, egusi',55,4,'2017-10-20 00:42:01.614 +00:00','2017-10-20 00:42:01.614 +00:00') RETURNING *;
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+FATAL:  connection to client lost

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kemifasae/Bootcamp-More-Recipes#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-register": "^6.26.0",
     "bcrypt": "^1.0.3",
     "bcrypt-nodejs": "0.0.3",
@@ -36,7 +37,7 @@
     "validatorjs": "^3.13.5"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+
     "babel-preset-env": "^1.6.0",
     "chai": "^4.1.2",
     "eslint": "^4.8.0",

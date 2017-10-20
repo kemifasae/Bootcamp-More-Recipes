@@ -21,6 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Require our routes into the application.
 Route(app);
 
+app.get('/', (req, res) =>
+res.status(202).send({ message: 'Please enter HTTP Request' }));
+
 app.get('*', (request, response) => response.status(404).send({
   message: 'INVALID ROUTE!!!.',
 }));

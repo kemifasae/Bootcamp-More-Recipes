@@ -18,4 +18,4 @@ ratings:
 exclude_paths:
 - node_modules/**/*
 - tests/**/*
-- public/**/*
+- template/**/*

@@ -2,6 +2,7 @@
 
 The More-Recipes app is an avenue for people to showcase their interesting and unique recipes.
 It allows a user to post a recipe he/she has come up with and get feedback in form of upvotes, downvotes  and reviews from users who explore that recipe.
+Homepage design can be seen [here](https://kemifasae.github.io/MyRecipes/template/)
 
 The application has the following features:
 ```
